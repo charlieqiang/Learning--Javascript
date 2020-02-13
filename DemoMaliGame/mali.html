@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <script language="javascript" src="js/mali.js">
+    </script>
+</head>
+<body>
+    
+    <div class="game">
+        <img id="myMa" src="img/mario.gif" style="position: absolute; left: 10px; top: 10px;"/>
+    </div>
+    <div class="control">
+        <table> 
+            <tr>
+                <td colspan="3" align="center">
+                    keyboard
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="button" value="👆" onclick=" ma01.move('w')"/>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="👈" onclick="ma01.move('a')"/>
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    <input type="button" value="👉" onclick="ma01.move('d')"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="button" value="👇" onclick="ma01.move('s')"/>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

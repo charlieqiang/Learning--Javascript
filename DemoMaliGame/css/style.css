@@ -1,0 +1,22 @@
+body{
+    background-color: pink;
+}
+img{
+    width: 50px;
+}
+table, th, td
+{
+    border: 1px solid white;
+}
+.game{
+    width: 500px;
+    height: 400px;
+    background-color: #FEFEFE;
+   
+}
+
+.control{
+    width: fit-content;
+    margin: 5px 190px;
+    border: 3px solid white;
+}
