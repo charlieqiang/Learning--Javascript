@@ -8,7 +8,7 @@
     <script language="javascript" src="js/dom.js">
     </script>
 </head>
-<body oncontextmenu="return forbidCopy()" onselectstart="return forbidFocus()">
+<body>
     
     <div class="game">
         <img id="myMa" src="img/mario.gif" style="position: absolute; left: 10px; top: 10px;"/>
@@ -19,6 +19,8 @@
         <input type="button" value="delete" onclick="deletew()"/>
         倒数五个数！
         <span id="showtime"></span>
+        <input type="button" onclick="inter()" value="open">
+        msg:<span id="myspan"></span>
     </div>
     <div class="control">
         <table> 

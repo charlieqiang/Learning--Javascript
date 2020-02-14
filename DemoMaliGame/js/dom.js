@@ -20,4 +20,8 @@ function showtime(){
 function reRun(){
     mytimer=setInterval("showtime()",1000);
 }
+function inter(){
+    var newWindow=window.open("newWindow.html","_blank");
+}
+
 setTimeout("deletew()",5000);

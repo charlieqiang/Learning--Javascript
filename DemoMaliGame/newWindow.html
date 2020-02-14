@@ -1,0 +1,9 @@
+<script language="javascript">
+    function notify(){
+        var val=document.getElementById("info").value;
+        window.alert(val);
+        opener.document.getElementById("myspan").innerText=val;
+    }
+</script>
+<input type="text" id="info"/>
+<input type="button" value="conmunication" onclick="notify()"/>
