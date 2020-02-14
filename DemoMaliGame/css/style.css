@@ -1,16 +1,20 @@
 body{
     background-color: pink;
 }
+
 img{
     width: 50px;
 }
+
 table, th, td
 {
     border: 1px solid white;
 }
+
 .game{
     width: 500px;
     height: 400px;
+    float: left;
     background-color: #FEFEFE;
    
 }
@@ -19,4 +23,13 @@ table, th, td
     width: fit-content;
     margin: 5px 190px;
     border: 3px solid white;
+    float: left;
+}
+
+.cssDriver{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: papayawhip;
+    float: left;
 }
