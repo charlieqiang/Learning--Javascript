@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
-    <script language="javascript" src="js/dom.js">
-    </script>
+
 </head>
 <body>
     
-    <div class="game">
-        <img id="myMa" src="img/mario.gif" style="position: absolute; left: 10px; top: 10px;"/>
+    <div id="game" class="game">
+        <div id="sun" style="top: 10px; left: 10px;">
+            <img id="myMa" src="img/sun.gif"/>
+        </div>
     </div>
     <div id="cssDriver" class="cssDriver">
         <input type="button" value="black" onclick="chanout(this)"/>
         <input type="button" value="r e d" onclick="chanout(this)"/>
         <input type="button" value="delete" onclick="deletew()"/>
         倒数五个数！
-        <span id="showtime"></span>
+        <span id="showtime"></span><br>
         <input type="button" onclick="inter()" value="open">
         msg:<span id="myspan"></span>
+        <form action="index.html">
+            u:<input type="text" name="" id="uname">
+            p:<input type="password" name="" id="pwd">
+            <input type="submit" name="" id="" onclick="return checkU()" value="login">
+        </form>
+        <input type="checkbox" name="hobby" id="" value="足球">足球
+        <input type="checkbox" name="hobby" id="" value="旅游">旅游
+        <input type="checkbox" name="hobby" id="" value="音乐">音乐
+        <input type="button" onclick="checkH()" value="chose">
+        <input type="button" onclick="findTag()" value="find">
+        <input type="button" onclick="god()" value="create">
+        <input type="button" onclick="godD()" value="delete">
+    
     </div>
+    <div id="world" style="float: left; height: 200px; width: 200px; border: 1px solid red;"></div>
     <div class="control">
         <table> 
             <tr>
@@ -62,4 +77,6 @@
     </div>
 
 </body>
+<script language="javascript" src="js/dom.js">
+</script>
 </html>

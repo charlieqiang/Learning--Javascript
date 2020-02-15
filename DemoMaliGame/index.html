@@ -1,1 +1,18 @@
-<script language="javascript" src="js/diffeClient.js"></script>
+<script language="javascript">
+    // setTimeout("javascript:window.open('index.html'",2000);
+    function jump(){
+        clearInterval(mytimer);
+        window.open('mali.html',"_self");
+
+    }
+    setTimeout("jump()",5000);
+    function changeSec(){
+        $("mytimer").innerText=($("mytimer").innerText)-1;
+    }
+    function $(id){
+        return document.getElementById(id);
+    }
+    var mytimer=setInterval("changeSec()",1000);
+</script>
+
+<span id="mytimer">5</span> second later jump!

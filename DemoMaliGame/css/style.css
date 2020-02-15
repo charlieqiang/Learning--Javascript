@@ -1,8 +1,10 @@
 body{
+    height: 600px;
     background-color: pink;
 }
 
 img{
+    
     width: 50px;
 }
 
@@ -12,11 +14,21 @@ table, th, td
 }
 
 .game{
+    
     width: 500px;
     height: 400px;
     float: left;
     background-color: #FEFEFE;
    
+}
+
+#sun{
+    padding: 0%;
+    position: absolute; 
+    width: 51px;
+    height: 51px;
+    float: right;
+    /* border: 1px solid red; */
 }
 
 .control{
