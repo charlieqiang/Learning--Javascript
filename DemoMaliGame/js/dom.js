@@ -57,8 +57,8 @@ function god(){
     var myElement=document.createElement("input");
     myElement.value="god";
     myElement.type="button";
-    myElement.id="Adam"
-    // myElement.href="http://www.spe.kim";
+    myElement.id="Adam";
+    myElement.οnclick="window.open('http://www.spe.kim')";
     // myElement.innerText="go to spe";
     document.getElementById("world").appendChild(myElement);
 }
@@ -93,6 +93,64 @@ function sunMove(){
         directY=-directY;
     }
 }
+function changeTank(obj){
+    
+    if(obj.value=="👆"){
+        
+        tank.style.backgroundPositionY="0px";
+    }
+    else if(obj.value=="👇"){
+        
+        tank.style.backgroundPositionY="110px";
+    }
+    else if(obj.value=="👉"){
+        tank.style.backgroundPositionY="161px";
+    }
+    else if(obj.value=="👈"){
+        tank.style.backgroundPositionY="55px";
+    }
+}
+function MyTank(x,y,direct){
+
+    this.x=x;
+    this.y=y;
+    this.direct=direct;
+    this.speed=10;
+    //init
+    tank.style.left=this.x+"px";
+    tank.style.top=this.y+"px";
+    tank.style.backgroundPositionY="0px";
+
+    // a3\s2\d1\w0
+    this.move=function move(event){
+        switch(event.keyCode){
+            case 65://a
+                this.x-=this.speed;
+                this.direct=3;
+                tank.style.backgroundPositionY="55px";
+                break;
+            case 83://s
+                this.y+=this.speed;
+                this.direct=2;
+                tank.style.backgroundPositionY="110px";
+                break;
+            case 68://d
+                this.x+=this.speed;
+                this.direct=1;
+                tank.style.backgroundPositionY="161px";
+                break;
+            case 87://w
+                this.y-=this.speed;
+                this.direct=0;
+                tank.style.backgroundPositionY="0px";
+                break;
+        }    
+        //change
+        tank.style.left=this.x+"px";
+        tank.style.top=this.y+"px";
+    }
+}
+var hero = new MyTank(1240,200,1);
 // window.alert(sunTop.substr(0,sunTop.length-2));  
 setInterval("sunMove()",10);
 // setTimeout("deletew()",5000);

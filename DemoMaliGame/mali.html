@@ -7,7 +7,7 @@
     <title>Document</title>
 
 </head>
-<body>
+<body onkeydown="hero.move(event)">
     
     <div id="game" class="game">
         <div id="sun" style="top: 10px; left: 10px;">
@@ -36,7 +36,11 @@
         <input type="button" onclick="godD()" value="delete">
     
     </div>
-    <div id="world" style="float: left; height: 200px; width: 200px; border: 1px solid red;"></div>
+    <div id="world" style="background-color: seashell; float: right; height: 400px; width: 400px; border: 1px solid red;">
+        <div id="tank" style="position: absolute; top: 200px; left: 1240px; background-position-y: 0
+        px; background-image: url('img/tank.png'); height: 52px; width: 52px;">
+        </div>
+    </div>
     <div class="control">
         <table> 
             <tr>
@@ -48,27 +52,27 @@
                 <td>
                 </td>
                 <td>
-                    <input type="button" value="👆" onclick=" ma01.move('w')"/>
+                    <input type="button" value="👆" onclick=" ma01.move('w'),changeTank(this)"/>
                 </td>
                 <td>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="button" value="👈" onclick="ma01.move('a')"/>
+                    <input type="button" value="👈" onclick="ma01.move('a'),changeTank(this)"/>
                 </td>
                 <td>
                     
                 </td>
                 <td>
-                    <input type="button" value="👉" onclick="ma01.move('d')"/>
+                    <input type="button" value="👉" onclick="ma01.move('d'),changeTank(this)"/>
                 </td>
             </tr>
             <tr>
                 <td>
                 </td>
                 <td>
-                    <input type="button" value="👇" onclick="ma01.move('s')"/>
+                    <input type="button" value="👇" onclick="ma01.move('s'),changeTank(this)"/>
                 </td>
                 <td>
                 </td>
