@@ -150,6 +150,10 @@ function MyTank(x,y,direct){
         tank.style.top=this.y+"px";
     }
 }
+
+function dosomething(event){
+    if(event.keyCode==)
+}
 var hero = new MyTank(1240,200,1);
 // window.alert(sunTop.substr(0,sunTop.length-2));  
 setInterval("sunMove()",10);
