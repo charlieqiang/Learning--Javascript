@@ -93,6 +93,7 @@ function sunMove(){
         directY=-directY;
     }
 }
+
 function changeTank(obj){
     
     if(obj.value=="👆"){
@@ -152,7 +153,7 @@ function MyTank(x,y,direct){
 }
 
 function dosomething(event){
-    if(event.keyCode==)
+    
 }
 var hero = new MyTank(1240,200,1);
 // window.alert(sunTop.substr(0,sunTop.length-2));  
